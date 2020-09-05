@@ -8,7 +8,7 @@ WORKDIR app
 # where available (npm@5+)
 COPY package*.json ./
 
-RUN npm install && npm install @yellicode/cli -g && git config --global alias.co checkout && git config --global alias.br branch && git config --global alias.ci commit &&  git config --global alias.st status
+RUN npm install && npm install @yellicode/cli -g
 # If you are building your code for production
 # RUN npm ci --only=production
 
