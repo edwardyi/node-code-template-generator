@@ -8,5 +8,5 @@ ports:
 
 # List the start up tasks. You can start them in parallel in multiple terminals. See https://www.gitpod.io/docs/config-start-tasks/
 tasks:
-  - init: git config --global alias.co checkout && git config --global alias.br branch && git config --global alias.ci commit &&  git config --global alias.st status
+  - init: npm install && git config --global alias.co checkout && git config --global alias.br branch && git config --global alias.ci commit &&  git config --global alias.st status
     command: node app.js
