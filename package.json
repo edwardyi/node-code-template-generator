@@ -18,5 +18,10 @@
   "homepage": "https://github.com/edwardyi/node-code-template-generator#readme",
   "dependencies": {
     "@yellicode/cli": "^1.2.0"
+  },
+  "devDependencies": {
+    "@yellicode/core": "^1.2.2",
+    "@yellicode/elements": "^1.7.0",
+    "@yellicode/templating": "^1.6.0"
   }
 }

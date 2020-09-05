@@ -8,7 +8,7 @@ WORKDIR app
 # where available (npm@5+)
 COPY package*.json ./
 
-RUN npm install
+RUN npm install && npm install @yellicode/cli -g && git config --global alias.co checkout && git config --global alias.br branch && git config --global alias.ci commit &&  git config --global alias.st status
 # If you are building your code for production
 # RUN npm ci --only=production
 
@@ -16,7 +16,7 @@ RUN npm install
 COPY . .
 
 EXPOSE 8081
-CMD [ "node", "server.js" ]
+CMD [ "node", "app.js" ]
 # FROM gitpod/workspace-full
 
 # USER gitpod
